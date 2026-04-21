@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink Task Planner</title>
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>✨🍃 Quest LogBook ✨🍃</h1>
+
+  <!-- PROGRESS -->
+  <div class="progress-box">
+    <span id="progressText">0% complete</span>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="input-box">
+    <input type="text" id="taskInput" placeholder="Add a cute task...">
+
+    <select id="category">
+      <option value="Personal">🏡 Personal</option>
+      <option value="Work">💻 Work</option>
+      <option value="Study">📚 Study</option>
+    </select>
+
+    <select id="priority">
+      <option value="low">🌸🌱 Mini Quest</option>
+      <option value="medium">⚔️🎀Side quest </option>
+      <option value="high">👑💪 Boss Level</option>
+    </select>
+
+    <input type="date" id="dueDate">
+
+    <button onclick="addTask()">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+
+  <!-- TASK LIST -->
+  <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
